@@ -55,7 +55,7 @@ header {
   cursor: pointer;
 }
 
-.nav-menu:hover {
+.nav-menu li:hover {
   color: #fff;
 }
 
