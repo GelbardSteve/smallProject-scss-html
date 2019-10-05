@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "montserrat";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+}
+
+@import "scssComponent/button";
+@import "scssComponent/nav";
+@import "scssComponent/section";
+@import "scssComponent/blueSection";
+@import "scssComponent/grayContainer";
+@import "scssComponent/footerContainer";

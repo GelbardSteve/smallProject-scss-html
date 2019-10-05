@@ -1,0 +1,53 @@
+.section-container {
+  padding-top: 4em;
+}
+
+.img-server {
+  width: 70%;
+  margin: 0.8em auto 0 25%;
+}
+
+.section-container > h1 {
+  position: relative;
+  z-index: 3;
+}
+
+.scroll {
+  display: none;
+}
+
+@media only screen and (min-width: 650px) {
+  .img-server {
+    width: 50%;
+  }
+  .section-container > h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  .section-container > p {
+    font-size: 1.4em;
+    margin: 1%;
+  }
+  .scroll {
+    display: block;
+    margin: 2% auto 0 auto;
+    width: 2%;
+    animation: move 1s infinite alternate;
+    cursor: pointer;
+  }
+  @keyframes move {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+}
+
+@media only screen and (min-width: 1270px) {
+  .img-server {
+    width: 35%;
+    margin: 3em auto 2em 15%;
+  }
+}

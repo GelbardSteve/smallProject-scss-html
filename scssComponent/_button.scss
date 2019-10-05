@@ -1,0 +1,6 @@
+@mixin ctaButton($width:"", $height:"", $background:"") {
+    width: $width;
+    height: $height;
+    background: $background;
+    @content
+}

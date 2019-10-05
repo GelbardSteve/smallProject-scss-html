@@ -1,0 +1,42 @@
+.gray-container {
+  background: #f6f6f6;
+  padding: 4em 0;
+  margin: -9px 0 7% 0;
+  & ul li:first-child {
+    margin-bottom: 2em;
+  }
+  & figcaption {
+    font-weight: 900;
+    color: #00c2ff;
+  }
+}
+
+.cta-button {
+  @include ctaButton(calc(315px), null, #00cc80) {
+      display: block;
+      color: #fff;
+      border-radius: 20px;
+      padding: .3em;
+      font-size: 1.5em;
+      margin: 2% auto 5% auto;
+      z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .gray-container {
+    padding: 0;
+    margin: -25px 0 7% 0;
+    & ul {
+      display: flex;
+      justify-content: center;
+    }
+    & ul li {
+      margin: 8%;
+      width: 12%;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
